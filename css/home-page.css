@@ -883,6 +883,11 @@ footer .footer-items {
         display: block;
     }
 
+    .footer-items .item-1 h4 .fa-angle-down {
+        font-size: 30px;
+        color: #fff;
+    }
+
     .small-footer {
         display: block;
     }
@@ -901,7 +906,7 @@ footer .footer-items {
     }
 
     .footer-items .item.social .icon {
-        color: #0D81BE;
+        color: #06B6FC;
     }
 
     .footer-items .item.social {
