@@ -67,12 +67,12 @@
     margin: auto;
     padding: 0px;
     width: 60%;
-    height: 400px;
+    //height: 1000px;
 
     .card {
       background: rgba(0, 0, 0, .8);
       width: 100%;
-      height: 400px;
+      height: 60vh;
 
       .call-title {
         font-size: 35px;
@@ -464,7 +464,7 @@
   .call {
     /* Modal Content */
     .modal {
-      padding-top: 60px; /* Location of the box */
+      padding-top: 100px; /* Location of the box */
     }
 
     .modal-content {
@@ -594,7 +594,7 @@
 @media (max-width: 800px) {
   .call {
     .modal {
-      padding-top: 20px; /* Location of the box */
+      padding-top: 100px; /* Location of the box */
     }
 
     .button {
@@ -1011,9 +1011,33 @@
 
 @media (max-width: 500px) {
   .call {
+    .button {
+      border: 5px solid #aaa9a9;
+      border-radius: 50px;
+      padding: 10px;
+      background: #fdd265;
+      outline: none;
+      box-shadow: 0px 0px 1px 5px #0000001a;
+      opacity: .7;
+      transition: .5s;
+
+      &:hover {
+        opacity: 1;
+        transition: .5s;
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 25px;
+      }
+
+      .fa-headset {
+        font-size: 50px;
+      }
+    }
     /* Modal Content */
     .modal {
-      padding-top: 20px !important; /* Location of the box */
+      padding-top: 100px !important; /* Location of the box */
     }
 
     .modal-content {
@@ -1149,9 +1173,33 @@
 
 @media (max-width: 420px) {
   .call {
+    .button {
+      border: 5px solid #aaa9a9;
+      border-radius: 50px;
+      padding: 10px;
+      background: #fdd265;
+      outline: none;
+      box-shadow: 0px 0px 1px 5px #0000001a;
+      opacity: .7;
+      transition: .5s;
+
+      &:hover {
+        opacity: 1;
+        transition: .5s;
+        transform: scale(1);
+      }
+
+      img {
+        width: 20px;
+      }
+
+      .fa-headset {
+        font-size: 50px;
+      }
+    }
     /* Modal Content */
     .modal {
-      padding-top: 20px !important; /* Location of the box */
+      padding-top: 100px !important; /* Location of the box */
     }
 
     .modal-content {
@@ -1280,7 +1328,7 @@
     outline: none !important;
 
     img {
-      width: 35px;
+      width: 40px;
     }
   }
 }
@@ -1288,10 +1336,28 @@
 @media (max-width: 360px) {
   .call {
     bottom: 6em;
-
     .button {
+      border: 3px solid #aaa9a9;
+      border-radius: 50px;
+      padding: 7px;
+      background: #fdd265;
+      outline: none;
+      box-shadow: 0px 0px 1px 5px #0000001a;
+      opacity: .7;
+      transition: .5s;
+
+      &:hover {
+        opacity: 1;
+        transition: .5s;
+        transform: scale(1);
+      }
+
       img {
-        width: 15px;
+        width: 20px;
+      }
+
+      .fa-headset {
+        font-size: 30px;
       }
     }
   }
