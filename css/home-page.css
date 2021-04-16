@@ -36,7 +36,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    height: 84px;
+    height: 87px;
     position: relative;
     background: white;
     font-family: 'fontawesome', 'oswald', sans-serif;
@@ -60,7 +60,34 @@ nav a {
 .navbar .drop-down li a:hover {
     color: #06b6fc;
 }
+.navbar select img{
+    width: 50px;
+}
 
+.navbar #lang {
+    color: #06b6fc;
+    font-weight: 700;
+    margin-top: 18px;
+    border: none;
+    padding: 4px 8px;
+}
+
+#myNav #lang option{
+    background-color: black;
+    opacity: 0.6;
+    border: none;
+    padding: 4px 6px;
+}
+#myNav #lang {
+    width: 80px;
+    background-color: black;
+    opacity: 0.6;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    padding: 4px 6px;
+}
 /* Basic Style */
 
 nav > ul > li {
@@ -404,7 +431,7 @@ nav .open-nav {
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 99px;
+    top: 102px;
     left: 0;
     background-color: #272f32;
     opacity: 0.5;
@@ -601,6 +628,13 @@ nav .open-nav {
     background-color: #06b6fc;
     padding: 12px 8px;
     border-radius: 3px;
+}
+.catalog-product .product .product__btn a:hover{
+    color: #06b6fc;
+    background-color: white;
+    border: 2px solid #06b6fc;
+    transform: scale(1.4);
+    transition: 300ms;
 }
 
 @media (max-width: 991px) {
