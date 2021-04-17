@@ -1,6 +1,6 @@
 .call {
   font-family: inter !important;
-  z-index: 99999999999999999999;
+  z-index: 9999 !important;
   right: 1em;
   bottom: 7em;
   color: #FAFAFA;
