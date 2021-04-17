@@ -296,6 +296,10 @@ nav > ul > li.drop-down > ul > li.sub-drop > ul:before {
     border-width: 9px;
     margin-top: -9px;
 }
+/* ////////////////////////////////////////////////// */
+
+
+/* //////////////////////////////////////////////// */
 
 /* The Overlay (background) */
 .overlay {
@@ -322,30 +326,44 @@ nav > ul > li.drop-down > ul > li.sub-drop > ul:before {
     margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.overlay-content .burger-nav {
+.overlay-content .footer-items {
+    display: block !important;
+    width: 60% !important;
+    margin: 0px auto !important;
+    padding: 0 !important;
+}
+ .overlay-content .burger-nav {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
+ }
+.overlay-content .burger-nav .sot_seti .seti {
+    font-size: 44px !important;
 }
-
 .overlay-content .burger-nav li {
     margin-right: 25px;
 }
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 8px;
+    padding: 2px;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 14px;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
 }
 
+.overlay-content h4{
+    text-align: center;
+    text-transform: uppercase;
+    border: none !important;
+}
 /* When you mouse over the navigation links, change their color */
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
+} 
 
 /* Position the close button (top right corner) */
 .overlay .closebtn {
@@ -480,9 +498,7 @@ nav .open-nav {
         max-width: 420px;
     }
 
-    .overlay .overlay-content a {
-        font-size: 30px;
-    }
+    
 }
 
 @media (max-width: 365px) {
@@ -660,7 +676,7 @@ nav .open-nav {
 
 @media (max-width: 786px) {
     .catalog-product .catalog-product__details {
-        padding: 50px 0 0;
+        padding: 50px 0 ;
     }
 }
 
