@@ -1,7 +1,6 @@
 /* Layout */
 
 @import url(https://fonts.googleapis.com/css?family=Oswald);
-
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,6 @@
     padding-top: 12px;
     border-bottom: 3px solid #06b6fc;
     background-color: white;
-
 }
 
 nav {
@@ -40,7 +38,6 @@ nav {
     position: relative;
     background: white;
     font-family: 'fontawesome', 'oswald', sans-serif;
-
 }
 
 nav .site-logo {
@@ -60,7 +57,8 @@ nav a {
 .navbar .drop-down li a:hover {
     color: #06b6fc;
 }
-.navbar select img{
+
+.navbar select img {
     width: 50px;
 }
 
@@ -72,12 +70,13 @@ nav a {
     padding: 4px 8px;
 }
 
-#myNav #lang option{
+#myNav #lang option {
     background-color: black;
     opacity: 0.6;
     border: none;
     padding: 4px 6px;
 }
+
 #myNav #lang {
     width: 80px;
     background-color: black;
@@ -88,15 +87,15 @@ nav a {
     border: none;
     padding: 4px 6px;
 }
+
 /* Basic Style */
 
-nav > ul > li {
+nav>ul>li {
     position: relative;
     float: left;
 }
 
-
-nav > ul > li > a {
+nav>ul>li>a {
     position: relative;
     line-height: 60px;
     padding: 0 20px;
@@ -108,22 +107,23 @@ nav > ul > li > a {
     transition: all 300ms ease-in-out;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
     color: #06b6fc;
 }
-nav > ul > li.blog-post {
+
+nav>ul>li.blog-post {
     text-transform: uppercase;
     position: static;
 }
 
-nav > ul > li.blog-post:hover .nav-item {
+nav>ul>li.blog-post:hover .nav-item {
     opacity: 1;
     top: 100%;
     left: 0;
     visibility: visible;
 }
 
-nav > ul > li.blog-post .nav-item {
+nav>ul>li.blog-post .nav-item {
     position: absolute;
     width: 100%;
     overflow: auto;
@@ -139,7 +139,7 @@ nav > ul > li.blog-post .nav-item {
     transition: opacity 300ms ease-in-out;
 }
 
-nav > ul > li.blog-post .nav-item .item {
+nav>ul>li.blog-post .nav-item .item {
     float: left;
     width: -webkit-calc(25% - 40px);
     width: calc(25% - 40px);
@@ -149,16 +149,16 @@ nav > ul > li.blog-post .nav-item .item {
     border-radius: 5px;
 }
 
-nav > ul > li.blog-post .nav-item .item img {
+nav>ul>li.blog-post .nav-item .item img {
     width: 100%;
     height: 150px;
 }
 
-nav > ul > li.blog-post .nav-item .item h3 {
+nav>ul>li.blog-post .nav-item .item h3 {
     font-size: 15px;
 }
 
-nav > ul > li.blog-post .nav-item .item a {
+nav>ul>li.blog-post .nav-item .item a {
     color: #ff3d2e;
 }
 
@@ -166,12 +166,16 @@ nav > ul > li.blog-post .nav-item .item a {
 
 nav .drop-down {
     text-transform: uppercase;
+    font-weight: 700;
     z-index: 999999999;
+    letter-spacing: 2px;
 }
-.navbar .drop-down .fa-angle-right{
+
+.navbar .drop-down .fa-angle-right {
     margin-left: 8px;
 }
-nav > ul > li.drop-down > ul {
+
+nav>ul>li.drop-down>ul {
     position: absolute;
     border-top: 3px solid #e74c3c;
     top: -99999px;
@@ -185,7 +189,7 @@ nav > ul > li.drop-down > ul {
     transition: opacity 300ms ease-in-out;
 }
 
-nav > ul > li.drop-down > ul:after, nav > ul > li.drop-down > ul:before {
+nav>ul>li.drop-down>ul:after, nav>ul>li.drop-down>ul:before {
     bottom: 100%;
     left: 50%;
     border: solid transparent;
@@ -196,28 +200,28 @@ nav > ul > li.drop-down > ul:after, nav > ul > li.drop-down > ul:before {
     pointer-events: none;
 }
 
-nav > ul > li.drop-down > ul:after {
+nav>ul>li.drop-down>ul:after {
     border-color: rgba(236, 240, 241, 0);
     border-bottom-color: #ecf0f1;
     border-width: 5px;
     margin-left: -5px;
 }
 
-nav > ul > li.drop-down > ul:before {
+nav>ul>li.drop-down>ul:before {
     border-color: rgba(231, 76, 60, 0);
     border-bottom-color: #e74c3c;
     border-width: 9px;
     margin-left: -9px;
 }
 
-nav > ul > li.drop-down:hover > ul {
+nav>ul>li.drop-down:hover>ul {
     opacity: 1;
     top: 100%;
     left: 0;
     visibility: visible;
 }
 
-nav > ul > li.drop-down > ul a {
+nav>ul>li.drop-down>ul a {
     padding: 10px;
     display: block;
     border-bottom: 1px solid #ddd;
@@ -228,18 +232,18 @@ nav > ul > li.drop-down > ul a {
     transition: all 300ms ease-in-out;
 }
 
-nav > ul > li.drop-down > ul > li.sub-drop {
+nav>ul>li.drop-down>ul>li.sub-drop {
     position: relative;
 }
 
-nav > ul > li.drop-down > ul > li.sub-drop .fa-angle-double-right {
+nav>ul>li.drop-down>ul>li.sub-drop .fa-angle-double-right {
     float: right;
     position: absolute;
     left: 90%;
     bottom: 40%;
 }
 
-nav > ul > li.drop-down > ul > li.sub-drop > ul {
+nav>ul>li.drop-down>ul>li.sub-drop>ul {
     left: 90%;
     width: 150px;
     opacity: 0;
@@ -253,53 +257,66 @@ nav > ul > li.drop-down > ul > li.sub-drop > ul {
     transition: opacity 300ms ease-in-out;
 }
 
-nav > ul > li.drop-down > ul > li.sub-drop:hover > ul {
+nav>ul>li.drop-down>ul>li.sub-drop:hover>ul {
     opacity: 1;
     left: 100%;
     top: 0;
     visibility: visible;
 }
-nav > ul > li.drop-down > ul > li.sub-drop > ul:after {
+
+nav>ul>li.drop-down>ul>li.sub-drop>ul:after {
     border-color: rgba(236, 240, 241, 0);
     border-right-color: #ecf0f1;
     border-width: 5px;
     margin-top: -5px;
 }
 
-nav > ul > li.drop-down > ul > li.sub-drop > ul:before {
+nav>ul>li.drop-down>ul>li.sub-drop>ul:before {
     border-color: rgba(231, 76, 60, 0);
     border-right-color: #e74c3c;
     border-width: 9px;
     margin-top: -9px;
 }
-/* ////////////////////////////////////////////////// */
 
+/* ////////////////////////////////////////////////// */
 
 /* //////////////////////////////////////////////// */
 
 /* The Overlay (background) */
+
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     display: none;
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 9999999999; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 9999999999;
+    /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0, 0, 0); /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
+
 .overlay-content {
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 .overlay-content .footer-items {
@@ -308,41 +325,49 @@ nav > ul > li.drop-down > ul > li.sub-drop > ul:before {
     margin: 0px auto !important;
     padding: 0 !important;
 }
- .overlay-content .burger-nav {
+
+.overlay-content .burger-nav {
     display: flex;
     justify-content: center;
-    margin-bottom: 15px;
- }
+    margin: 25px 35px;
+}
+
 .overlay-content .burger-nav .sot_seti .seti {
     font-size: 44px !important;
 }
+
 .overlay-content .burger-nav li {
     margin-right: 25px;
 }
 
 /* The navigation links inside the overlay */
+
 .overlay a {
     padding: 2px;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
     color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
 }
 
-.overlay-content h4{
+.overlay-content h4 {
     text-align: center;
     text-transform: uppercase;
     border: none !important;
 }
 
 /* When you mouse over the navigation links, change their color */
+
 .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-} 
+}
 
 /* Position the close button (top right corner) */
+
 .overlay .closebtn {
     position: absolute;
     top: 20px;
@@ -355,11 +380,11 @@ nav .open-nav {
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
     }
-
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -367,47 +392,51 @@ nav .open-nav {
     }
 }
 
-@media (max-width: 816px) {
+@media (max-width: 991px) {
     nav .open-nav {
         display: block;
     }
-
     nav .overlay {
         display: block;
     }
-
     nav .navbar {
         display: none;
     }
-
 }
 
 /* networks starts here */
+
 .networks {
     display: flex;
     justify-content: flex-end;
 }
+
 .networks a {
     color: #000000;
     margin-left: 12px;
 }
+
 .networks .phone {
     margin-right: 28px;
 }
+
 .networks a .icons {
     color: #06B6FC;
     font-size: 24px;
 }
-.networks a .icons:hover{
+
+.networks a .icons:hover {
     color: #0487bb;
     transition: 300ms;
     transform: scale(1.2);
 }
+
 /* nav ends here */
 
 /*//////////////////////////////////////
 //////////// header starts here//////////
 ////////////////////////////////////// */
+
 .header__in {
     width: 100%;
     height: 100vh;
@@ -443,7 +472,6 @@ nav .open-nav {
     font-weight: 900;
     color: white;
     z-index: 99999;
-
 }
 
 .header__in .header__title .caption {
@@ -474,8 +502,6 @@ nav .open-nav {
         font-size: 55px;
         max-width: 420px;
     }
-
-    
 }
 
 @media (max-width: 365px) {
@@ -494,6 +520,7 @@ nav .open-nav {
 /*/////////////////////////////////
 ////// develompent starts here///////
 ////////////////////////////////// */
+
 .development {
     background-color: #F4F7F8;
 }
@@ -542,11 +569,9 @@ nav .open-nav {
         padding: 90px 0;
         margin: 0 auto;
     }
-
     .development .dev-section .dev {
         margin: 0 auto;
     }
-
     .development .dev-section .dev-section__img img {
         display: block;
         width: auto;
@@ -558,11 +583,9 @@ nav .open-nav {
     .development .dev-section .dev {
         padding: 0;
     }
-
     .development .dev-section .dev-section__img img {
         width: 100%;
     }
-
     .development .dev-section .dev .dev__title {
         width: 100%;
         font-size: 60px;
@@ -574,6 +597,7 @@ nav .open-nav {
 /*/////////////////////////////////
 ////// catalog-product starts here///////
 ////////////////////////////////// */
+
 .catalog-product {
     background-color: white;
 }
@@ -622,7 +646,8 @@ nav .open-nav {
     padding: 12px 8px;
     border-radius: 3px;
 }
-.catalog-product .product .product__btn a:hover{
+
+.catalog-product .product .product__btn a:hover {
     color: #06b6fc;
     background-color: white;
     border: 2px solid #06b6fc;
@@ -637,13 +662,11 @@ nav .open-nav {
         padding: 90px 0;
         margin: 0 auto;
     }
-
     .catalog-product .catalog-product__details .catalog-product__img img {
         width: 500px;
         display: block;
         margin: 0 auto;
     }
-
     .catalog-product .catalog-product__details .product {
         width: 100%;
         display: block;
@@ -653,7 +676,7 @@ nav .open-nav {
 
 @media (max-width: 786px) {
     .catalog-product .catalog-product__details {
-        padding: 50px 0 ;
+        padding: 50px 0;
     }
 }
 
@@ -663,17 +686,14 @@ nav .open-nav {
         display: block;
         margin: 0 auto;
     }
-
     .catalog-product .product .product__title {
         font-size: 55px;
         margin-bottom: 40px;
         line-height: 76px;
     }
-
     .catalog-product .product .product__btn a {
         font-size: 12px;
     }
-
 }
 
 /* catalog product ends here */
@@ -681,6 +701,11 @@ nav .open-nav {
 /* //////////////////////////////
 ///////Swiper Js starts here////////
 ////////////////////////////////// */
+
+html, body {
+    position: relative;
+    height: 100%;
+}
 
 .swiper-container {
     width: 100%;
@@ -692,7 +717,6 @@ nav .open-nav {
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -715,8 +739,14 @@ nav .open-nav {
 .swiper-wrapper .swiper-slide a {
     width: 100%;
 }
-
-
+.logos {
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+}
+.logos img{
+    width: 100%;
+    margin-bottom: 30px;
+}
 /*//////////////////////////////////////
 //////////// Footer starts here  //////////
 ////////////////////////////////////// */
@@ -761,9 +791,10 @@ nav .open-nav {
     margin-bottom: 0;
 }
 
-.footer-clean .col-sm-4 .navbar li .icon-left{
+.footer-clean .col-sm-4 .navbar li .icon-left {
     margin-right: 8px;
 }
+
 .footer-clean .col-sm-4 .navbar li {
     padding-bottom: 6px;
     border-bottom: 1px solid white;
@@ -797,7 +828,7 @@ nav .open-nav {
     justify-content: flex-end;
 }
 
-.footer-clean .item.social > a {
+.footer-clean .item.social>a {
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -812,12 +843,12 @@ nav .open-nav {
     opacity: 0.75;
 }
 
-.footer-clean .item.social > a:hover {
+.footer-clean .item.social>a:hover {
     border: 1px solid #000000;
     opacity: 1;
 }
 
-.footer-clean .item.social > a:hover {
+.footer-clean .item.social>a:hover {
     opacity: 1;
 }
 
@@ -847,22 +878,18 @@ footer .footer-items {
     .footer-clean {
         display: none;
     }
-
     footer {
         max-width: 100%;
         background: #1c1c1f;
     }
-
     footer .container {
         width: 100%;
     }
-
     footer .container .footer-items {
         display: block !important;
         width: 80% !important;
         margin: 0px auto !important;
     }
-
     .footer-items h4 {
         display: flex !important;
         justify-content: space-between;
@@ -880,11 +907,9 @@ footer .footer-items {
         overflow: hidden;
         margin: 10px 15px;
     }
-
     .footer-items .active ul {
         max-height: 1000px;
     }
-
     .footer-items button {
         display: block;
         font-weight: 500;
@@ -894,73 +919,58 @@ footer .footer-items {
         outline: none;
         background: #1c1c1f;
     }
-
     .footer-items .active {
         display: block !important;
         border-bottom: 1px solid #ebebeb;
         margin-bottom: 20px;
     }
-
     .footer-items .active ul {
         display: block;
     }
-
     .footer-items .active li {
         margin-bottom: 25px;
     }
-
     .footer-items .active a {
         color: #d1d1d1;
         text-decoration: none;
     }
-
     .footer-items .active h4 {
         border-bottom: none;
     }
     .footer-items i {
         display: inline-block;
     }
-
     .footer-items .address {
         display: none;
     }
-
     .footer-items .item-1:last-child {
         display: block;
     }
-
     .footer-items .item-1 h4 .fa-angle-down {
         font-size: 30px;
         color: #fff;
     }
-
     .small-footer {
         display: block;
     }
-
     .footer-items h4 {
         color: #fff;
     }
-
     .footer-items h4 i {
         font-size: 14px;
     }
-
     .footer-items li {
         display: flex;
         justify-content: space-between;
     }
-
     .footer-items .item.social .icon {
         color: #06B6FC;
     }
-
     .footer-items .item.social {
         display: flex;
         justify-content: flex-end;
     }
-
-    .footer-items .item.social > a {
+    .footer-items .item.social>a {
         font-size: 24px;
         width: 40px;
         height: 40px;
@@ -974,16 +984,13 @@ footer .footer-items {
         color: inherit;
         opacity: 0.75;
     }
-
-    .footer-items .item.social > a:hover {
+    .footer-items .item.social>a:hover {
         border: 1px solid #000000;
         opacity: 1;
     }
-
-    .footer-items .item.social > a:hover {
+    .footer-items .item.social>a:hover {
         opacity: 1;
     }
 }
 
 /*# sourceMappingURL=footer.css.map */
-  
