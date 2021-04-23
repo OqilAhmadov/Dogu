@@ -12,7 +12,9 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- Document Title
     ============================================= -->
@@ -58,9 +60,12 @@
                         <a href="https://www.facebook.com/doguuzbekistan"><i class="fab fa-facebook-f icons"></i></a>
                     </div>
 
-                    <li class='drop-down'><a href='./company.html'> Компания <i class="fas fa-angle-right"></i></a>
-                    <li class='drop-down'><a href='./categories.html'> ОБОРУДОВАНИЕ <i
-                                class="fas fa-angle-right"></i></a>
+                    <li class='drop-down'>
+                        <a href='./company.html'> Компания</a>
+                    <li class='drop-down'>
+                        <a href='./categories.html'> ОБОРУДОВАНИЕ
+                            <i class="fas fa-angle-right"></i>
+                        </a>
                         <ul>
                             <li class='sub-drop'><a href='./card.html'> Установки с теплоутилизацией <i
                                         class="fas fa-angle-double-right"></i></a>
@@ -244,9 +249,10 @@
                     <!-- Overlay content -->
                     <div class="overlay-content">
                         <div class="footer-items" style="padding: 50px 0px">
-                            <div class="item-1 active">
-                                    <h4 class="font-00-02"><a href="./company.html">О компании</a></h4>
-                                <h4 class="font-00-02"><a href="./categories.html">ОБОРУДОВАНИЕ</a><i class="fa fa-angle-down"></i></h4>
+                            <div class="item-1">
+                                <h4 class="font-00-02"><a href="./company.html">О компании</a></h4>
+                                <h4 class="font-00-02"><a href="./categories.html">ОБОРУДОВАНИЕ</a><i
+                                        class="fa fa-angle-down"></i></h4>
                                 <ul class="navbar">
                                     <li><a href="./card.html">Установки с теплоутилизацией</a></li>
                                     <li><a href="./card.html">Вентиляционные решетки и диффузоры</a></li>
@@ -260,20 +266,12 @@
                                 </ul>
                             </div>
                             <div class="item-1 ">
-                                <h4 class="font-00-02"><a href="./categories.html">Сетевые элементы</a> <i class="fa fa-angle-down"></i></h4>
+                                <h4 class="font-00-02"><a href="./categories.html">Сетевые элементы</a> <i
+                                        class="fa fa-angle-down"></i></h4>
                                 <ul class="navbar">
                                     <li><a href="./Projects.html">Решетки</a></li>
                                     <li><a href="./Projects.html">Диффузоры</a></li>
                                     <li><a href="./Projects.html">Клапаны</a></li>
-                                </ul>
-                            </div>
-                            <div class="item-1 ">
-                                <h4 class="font-00-02"><a href="#">Обратная связь</a> <i class="fa fa-angle-down"></i></h4>
-                                <ul class="navbar">
-                                    <li><a href="#"><i class="fas fa-phone"></i> (998) 90 014 70 04</a></li>
-                                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Адрес</a></li>
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.74398343783!2d69.13928082841667!3d41.28277055677675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQvtGI0LrQtdC90YIsIE9gemJla2lzdG9u!5e0!3m2!1suz!2s!4v1618299208274!5m2!1suz!2s"></iframe>
                                 </ul>
                             </div>
 
@@ -363,6 +361,32 @@
         </div>
     </main>
 
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/1_1.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_2.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_3.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_4.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_5.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_6.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_10.jpg" alt="JPG"></div>
+            <div class="swiper-slide"><img src="./images/1_9.jpg" alt="JPG"></div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper ends here -->
+
+    <!-- logos starts here -->
+    <div class="container">
+        <div class="logos">
+            <img src="./images/logos.jpg" alt="logos">
+
+        </div>
+    </div>
+    <!-- logos ends here -->
 
     <div class="footer-clean">
         <div class="container">
@@ -420,7 +444,9 @@
         </div>
         <div class="footer-bottom">
             <div class="link">© 2020 -
-                <script>document.write(new Date().getFullYear());</script>
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
                 Все права защищены.
             </div>
         </div>
@@ -428,7 +454,7 @@
     <footer>
         <div class="container">
             <div class="footer-items" style="padding: 50px 0px">
-                <div class="item-1 active">
+                <div class="item-1">
                     <h4 class="font-00-02">О компании <i class="fa fa-angle-down"></i></h4>
                     <ul class="navbar">
                         <li><a href="#">Центральные приточно-вытяжные установки</a></li>
@@ -504,51 +530,16 @@
 
         </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script>
-        [...document.querySelectorAll('.item-1')].map(item => {
-            item.addEventListener('click', event => {
-                event.currentTarget.classList.toggle('active');
-            });
-        });
 
-        // Get the modal
-        var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        ////  Initialize Swiper
-
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-        });
 
 
     </script>
+
     <!--call end-->
 
     <!-- Go To Top
@@ -557,11 +548,16 @@
 
     <!-- JavaScripts
 ============================================= -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="js/home-page.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/plugins.min.js"></script>
     <script src="./js/home-page.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
     <!-- Footer Scripts
 ============================================= -->
 </body>
