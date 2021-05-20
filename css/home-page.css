@@ -464,7 +464,7 @@ nav .open-nav {
   .swiper-backslide img {
     display: block;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     object-fit: cover;
   }
 
@@ -516,6 +516,9 @@ nav .open-nav {
 }
 
 @media (max-width: 561px) {
+    .swiper-backslide img {
+        height: 80vh;
+      }
     .mySwiper .header__title {
         font-size: 55px;
         max-width: 420px;
